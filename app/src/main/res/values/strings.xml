@@ -1,3 +1,48 @@
 <resources>
-    <string name="app_name">Quiz App</string>
+    <string name="app_name">The Pursuit Of Trivia</string>
+
+
+    <string name="game_title_text">The Pursuit of Trivia</string>
+    <string name="start_button_text">Start</string>
+    <string name="choose_category_text">Choose a Category:</string>
+
+
+    <string name="question_1_label">Question 1</string>
+    <string name="edit_text_hint">Answer</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="graham_bell_radio_text">Graham Bell</string>
+    <string name="thomas_edison_radio_text">Thomas Edison</string>
+    <string name="nicolas_tesla_radio_text">Nicolas Tesla</string>
+    <string name="albert_einstein_radio_text">Albert Einstein</string>
+    <string name="radio_text_1939">1939</string>
+    <string name="radio_text_1945">1945</string>
+    <string name="radio_text_1931">1931</string>
+    <string name="radio_text_1918">1918</string>
+    <string name="hand_radio_text">Hand</string>
+    <string name="ear_radio_text">Ear</string>
+    <string name="nose_radio_text">Nose</string>
+    <string name="toe_radio_text">Toe</string>
+    <string name="vang_gogh_radio_text">Vincent Van Gogh</string>
+    <string name="picasso_radio_text">Pablo Picasso</string>
+    <string name="warhol_radio_text">Andy Warhol</string>
+    <string name="pollock_radio_text">Jackson Pollock</string>
+    <string name="sudan_checkbox_text">Sudan</string>
+    <string name="uae_checkbox_text">United Arab Emirates</string>
+    <string name="sa_checkbox_text">South Africa</string>
+    <string name="singapore_check_text">Singapore</string>
+    <string name="cat_general_trivia">General Trivia</string>
+    <string name="cat_sports_trivia">Sports Trivia</string>
+    <string name="cat_film_trivia">Film Trivia</string>
+    <string name="cat_history_trivia">History Trivia</string>
+    <string name="question_1_text">Question 1: Who invented the telephone?</string>
+    <string name="question_2_text">Question 2: Who wrote Julius Caesar, Macbeth and Hamlet?</string>
+    <string name="question_3_text">Question 3: What year did the Spanish Civil War end?</string>
+    <string name="question_4_text">Question 4: Where is the smallest bone in the body?</string>
+    <string name="question_5_text">Question 5: What does the roman numeral C represent?</string>
+    <string name="question_6_text">Question 6: Who painted The Starry Night?</string>
+    <string name="question_7_text">Question 7: Which of the following countries are part of the Middle East, North Africa(MENA) Region? (Multiple Correct Answers)</string>
+    <string name="confetti_image_description">Confetti Image</string>
+    <string name="header_congrats">CONGRATULATIONS!</string>
+    <string name="play_again_text">Play Again</string>
+    <string name="home_text">Home</string>
 </resources>

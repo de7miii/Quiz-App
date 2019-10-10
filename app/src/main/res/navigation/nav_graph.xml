@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/startScreenFragment">
+
+    <fragment
+        android:id="@+id/startScreenFragment"
+        android:name="com.example.quizapp.StartScreenFragment"
+        android:label="fragment_start_screen"
+        tools:layout="@layout/fragment_start_screen" >
+        <action
+            android:id="@+id/action_startScreenFragment_to_generalTriviaFragment"
+            app:destination="@id/generalTriviaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generalTriviaFragment"
+        android:name="com.example.quizapp.GeneralTriviaFragment"
+        android:label="fragment_general_trivia"
+        tools:layout="@layout/fragment_general_trivia" >
+        <action
+            android:id="@+id/actionResult"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.quizapp.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/actionResultToGame"
+            app:destination="@id/generalTriviaFragment" />
+    </fragment>
+</navigation>
