@@ -17,6 +17,9 @@ import android.widget.RadioButton;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,11 +28,11 @@ public class StartScreenFragment extends Fragment {
 
     private NavController mNavController;
 
-    private RadioButton radioGeneralTrivia;
-    private RadioButton radioSportsTrivia;
-    private RadioButton radioFilmTrivia;
-    private RadioButton radioHistoryTrivia;
-    private Button buttonStart;
+    @BindView(R.id.radio_general_trivia) RadioButton radioGeneralTrivia;
+    @BindView(R.id.radio_sports_trivia) RadioButton radioSportsTrivia;
+    @BindView(R.id.radio_film_trivia) RadioButton radioFilmTrivia;
+    @BindView(R.id.radio_history_trivia) RadioButton radioHistoryTrivia;
+    @BindView(R.id.btn_start) Button buttonStart;
 
 
     public StartScreenFragment() {
@@ -41,11 +44,7 @@ public class StartScreenFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_start_screen, container, false);
-        radioGeneralTrivia = view.findViewById(R.id.radio_general_trivia);
-        radioSportsTrivia = view.findViewById(R.id.radio_sports_trivia);
-        radioFilmTrivia = view.findViewById(R.id.radio_film_trivia);
-        radioHistoryTrivia = view.findViewById(R.id.radio_history_trivia);
-        buttonStart = view.findViewById(R.id.btn_start);
+        ButterKnife.bind(this, view);
         return view;
     }
 
